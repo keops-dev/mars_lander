@@ -1,0 +1,54 @@
+#header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#mars {
+  position: relative;
+  /* height: 80vh; */
+  /* background-color: rgb(226, 185, 37); */
+  /* border: 1px solid rgb(146, 126, 53); */
+  /* width: fit-content; */
+}
+
+#mars_bg {
+  background-color: rgb(226, 185, 37);
+  width: 100%;
+  z-index: 1;
+}
+
+#mars_lander {
+  position: absolute;
+  bottom: 0;
+  left: -1rem;
+  z-index: 3;
+  height: 2rem;
+  width: 2rem;
+  transition: all 500ms linear;
+}
+
+#animation {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 4;
+}
+
+#game_data {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: rgba(245, 245, 220, 0.75);
+  color: rgb(226, 100, 37);
+  left: 2rem;
+  top: 1rem;
+  width: 20rem;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  font-size: small;
+  z-index: 3;
+}
+
+.game_value {
+  text-align: end;
+}

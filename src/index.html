@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Keops's Mars Lander 2 - A Codingame puzzle</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="header">
+        <h1>Mars Lander 2</h1>
+        <div id="controls">
+            <button id="next">Turn +1</button>
+            <button id="play">Play</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+    <div id="mars">
+        <div id="game_data">
+            <span>Timer</span><span id="timer_value" class="game_value" class="game_value">0</span>
+            <span>Best score</span><span id="best_score_value" class="game_value">0</span>
+            <span>Best state</span><span id="best_state_value" class="game_value">pending...</span>
+
+        </div>
+        <canvas id="mars_bg" width="7000" height="3000">
+            Ici, avec un navigateur plus récent, tu aurais vu Mars.
+        </canvas>
+        <canvas id="animation" width="7000" height="3000">
+            Et tu aurais vu un lander se poser dessus ! :D
+        </canvas>
+        <img src="./resources/mars_lander_200px.png" id="mars_lander" alt="Mars Lander">
+    </div>
+
+    <script type="module" src="index.ts" defer></script>
+</body>
+
+</html>
